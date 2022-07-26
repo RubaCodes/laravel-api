@@ -5,6 +5,7 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter);
 //sezione di import delle View (Vue componentes)
 import Home from "./pages/Home";
+import PostFeed from "./pages/PostFeed";
 
 //settings delle rotte
 const router = new VueRouter({
@@ -14,6 +15,11 @@ const router = new VueRouter({
       path: "/",
       name: "home",
       component: Home,
+    },
+    {
+      path: "/posts",
+      name: "posts",
+      component: PostFeed,
     },
   ],
 });
