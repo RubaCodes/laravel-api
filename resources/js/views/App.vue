@@ -1,19 +1,18 @@
 <template>
-    <div>
-        <h1>Front office-Vue</h1>
-        <h2>Work in porgress</h2>
-    </div>
+  <main>
+    <router-view></router-view>
+  </main>
 </template>
 
 <script>
 export default {
-    name: "App",
+  name: "App",
 };
 </script>
 
 <style lang="scss" scoped>
 div {
-    text-align: center;
-    background-color: lightblue;
+  text-align: center;
+  background-color: lightblue;
 }
 </style>
