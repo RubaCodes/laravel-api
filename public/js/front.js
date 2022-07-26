@@ -2072,20 +2072,29 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _vm._m(0);
+  return _c("header", {
+    staticClass: "p-5 bg-primary text-white"
+  }, [_c("div", {
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col d-flex align-items-center"
+  }, [_vm._v("\n      logo bel blog\n      "), _c("ul", {
+    staticClass: "d-flex"
+  }, [_c("li", [_c("router-link", {
+    staticClass: "btn btn-info border",
+    attrs: {
+      to: {
+        name: "home"
+      }
+    }
+  }, [_vm._v("Home")])], 1)])]), _vm._v(" "), _vm._m(0)])]);
 };
 
 var staticRenderFns = [function () {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("header", {
-    staticClass: "p-5 bg-primary text-white"
-  }, [_c("div", {
-    staticClass: "row"
-  }, [_c("div", {
-    staticClass: "col"
-  }, [_vm._v("logo bel blog")]), _vm._v(" "), _c("div", {
+  return _c("div", {
     staticClass: "col"
   }, [_c("ul", {
     staticClass: "d-flex justify-content-end align-items-center"
@@ -2094,7 +2103,7 @@ var staticRenderFns = [function () {
     attrs: {
       href: "/login"
     }
-  }, [_vm._v("Login")])])])])])]);
+  }, [_vm._v("Login")])])])]);
 }];
 render._withStripped = true;
 
