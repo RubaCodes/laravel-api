@@ -3,7 +3,12 @@
     <div class="container">
       <div class="row">
         <div v-for="post in posts" :key="post.id" class="col-6">
-          <PostCard :title="post.title" :content="post.content" />
+          <PostCard
+            class="my-2"
+            :title="post.title"
+            :content="post.content"
+            :slug="post.slug"
+          />
         </div>
       </div>
     </div>

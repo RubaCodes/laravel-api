@@ -4,7 +4,9 @@
     <p>
       {{ content }}
     </p>
-    <a class="bg-white btn" href="">vai alla pagina del post</a>
+    <router-link :to="{ name: 'post', params: { slug: slug } }"
+      >Visualizza post</router-link
+    >
   </div>
 </template>
 
@@ -14,6 +16,7 @@ export default {
   props: {
     title: String,
     content: String,
+    slug: String,
   },
 };
 </script>
