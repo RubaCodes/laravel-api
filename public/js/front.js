@@ -1980,15 +1980,15 @@ __webpack_require__.r(__webpack_exports__);
   name: "Post",
   data: function data() {
     return {
-      post: null
+      test: null
     };
   },
   created: function created() {
     var _this = this;
 
     axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("/api/posts/test-di-prova-numero-2").then(function (res) {
-      //console.log(res.data);
-      _this.post = res.data;
+      console.log(res.data);
+      _this.test = res.data;
     })["catch"](function (err) {
       console.log(err);
     });
@@ -2230,7 +2230,7 @@ var render = function render() {
     staticClass: "post"
   }, [_c("div", {
     staticClass: "container"
-  }, [_c("h1", [_vm._v(_vm._s(_vm.post.title))]), _vm._v(" "), _c("p", [_vm._v(_vm._s(_vm.post.content))]), _vm._v(" "), _c("h2", [_vm._v("categoria: " + _vm._s(_vm.post.category.name))])])]);
+  }, [_c("h1", [_vm._v(_vm._s(_vm.test.title))]), _vm._v(" "), _c("p", [_vm._v(_vm._s(_vm.test.content))]), _vm._v(" "), _c("h2", [_vm._v("categoria: " + _vm._s(_vm.test.category.name))])])]);
 };
 
 var staticRenderFns = [];

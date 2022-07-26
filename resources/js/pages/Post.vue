@@ -1,9 +1,9 @@
 <template>
   <div class="post">
     <div class="container">
-      <h1>{{ post.title }}</h1>
-      <p>{{ post.content }}</p>
-      <h2>categoria: {{ post.category.name }}</h2>
+      <h1>{{ test.title }}</h1>
+      <p>{{ test.content }}</p>
+      <h2>categoria: {{ test.category.name }}</h2>
     </div>
   </div>
 </template>
@@ -14,15 +14,15 @@ export default {
   name: "Post",
   data() {
     return {
-      post: null,
+      test: null,
     };
   },
   created() {
     axios
       .get(`/api/posts/test-di-prova-numero-2`)
       .then((res) => {
-        //console.log(res.data);
-        this.post = res.data;
+        console.log(res.data);
+        this.test = res.data;
       })
       .catch((err) => {
         console.log(err);
