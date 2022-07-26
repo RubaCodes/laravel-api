@@ -1,11 +1,23 @@
 <template>
-  <section></section>
+  <section class="post-feed py-5">
+    <div class="container">
+      <div class="row">
+        <div v-for="post in posts" :key="post.id" class="col-6">
+          <PostCard :title="post.title" :content="post.content" />
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
+import PostCard from "../components/blocks/PostCard.vue";
 import axios from "axios";
 export default {
   name: "PostFeed",
+  components: {
+    PostCard,
+  },
   data() {
     return {
       posts: null,
