@@ -1,6 +1,6 @@
 <template>
   <div class="post">
-    <div class="container">
+    <div v-if="test" class="container">
       <h1>{{ test.title }}</h1>
       <p>{{ test.content }}</p>
       <h2>categoria: {{ test.category.name }}</h2>
@@ -31,4 +31,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+//
+<style lang="scss" scoped>
+// [v-cloak] {
+//   display: none;
+// }
+</style>
