@@ -1986,7 +1986,7 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     var _this = this;
 
-    axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("/api/posts/test-di-prova-numero-2").then(function (res) {
+    axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("/api/posts/".concat(this.$route.params.slug)).then(function (res) {
       console.log(res.data);
       _this.test = res.data;
     })["catch"](function (err) {

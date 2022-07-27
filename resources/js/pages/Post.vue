@@ -19,7 +19,7 @@ export default {
   },
   created() {
     axios
-      .get(`/api/posts/test-di-prova-numero-2`)
+      .get(`/api/posts/${this.$route.params.slug}`)
       .then((res) => {
         console.log(res.data);
         this.test = res.data;
